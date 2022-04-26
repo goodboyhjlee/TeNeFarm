@@ -1,0 +1,58 @@
+{
+  "manifest_version": 2,
+  "name": "TeNe Farm",
+  
+  "short_name": "TeNe Farm",
+  "description": "Smart Farm Solution",
+  
+  "version": "4.0",
+  
+  
+ 
+  
+  
+
+  "icons": {
+    "16": "assets/logo_16.png",
+    "128": "assets/logo_128.png"
+  },
+
+  "app": {
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    }
+  },
+  
+ 
+  "sockets": {
+    "udp": {
+      "bind": "*",
+      "send": "*",
+      "close": "*"
+    },
+    "tcp": {
+      "connect": "*:*"
+    }
+    
+  },
+  
+  "permissions": [
+    "http://*/*", "https://*/*","http://*",
+    
+    "alwaysOnTopWindows",
+    "fullscreen",
+    "webview",
+        "storage",
+        "notifications",
+        "alarms",
+        "webview",
+        {"fileSystem": ["write", "retainEntries", "directory"]} 
+    ],
+
+  "sandbox": {
+    "pages": ["cam.html"]
+  }
+  
+  
+}

@@ -1,0 +1,269 @@
+.where {
+	position:relative;
+	display:inline-block;
+	padding-right: 4px;
+}
+.where .fieldcon {
+	
+	height: 34px;
+	/*
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
+	padding-top: 4px;
+	margin-bottom: 4px;
+	margin-right:10px;
+	width: 48%;
+	*/
+	
+	
+	padding-top: 4px;
+    
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.where .fieldcon .title {
+	position: relative;
+	width: 40px;
+	display: inline-block;
+	text-shadow: none;
+	font-size: 12px;
+	vertical-align: middle;
+	text-align:center;
+	display: none;
+}
+
+.where .fieldcon .select {
+	position: relative;
+	width: 90px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align:center;
+}
+
+.where .fieldcon .select .ui-select{
+	margin-top : 0px;
+	margin-bottom : 0px;
+}
+
+.where .fieldcon .date {
+	position: relative;
+	/*
+	width: 180px;
+	*/
+	display: inline-block;
+	vertical-align: middle;
+	text-align:center;
+}
+
+.where .fieldcon .date .seldate {
+	position: relative;
+	display: inline-block;
+	/*
+	width: 80px;
+	height:30px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align:center;
+	float:left;
+	*/
+}
+
+.where .fieldcon .date .seldate .ui-input-text {
+    margin-top: 0px !important;
+    padding-top: 0px;
+    margin-bottom: 0px !important;
+    border-style: none !important;
+    height:30px;
+    font-size:12px;
+}
+
+/*
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+*/
+
+.where .fieldcon .date .mark{
+	position: relative;
+	display: inline-block;
+	/*
+	width: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align:center;
+	float:left;
+	margin-top:5px;
+	*/
+}
+
+.where .button{
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align:center;
+	/*
+	float:right;
+	margin-top:2px;
+	margin-right:4px;
+	*/
+}
+
+
+.data_table {
+  width:100%;
+  font-size : 11px;
+  text-align: right;
+  color : #0B3B0B;
+  table-layout:fixed;
+  
+}
+
+.data_table td { overflow: hidden; }
+
+.data_table thead tr{
+  height:30px;
+  margin-top:6px;
+  font-weight:normal;
+  
+}
+
+.data_table thead tr th{
+  position: relative;
+ 
+  font-weight:normal;
+  border : 1px solid #BDBDBD;
+  text-align: center;
+}
+
+.data_table thead tr th span{
+   position: fixed;
+}
+
+.data_table thead tr th:last-child{
+  font-weight:normal;
+ 
+  text-align: center;
+}
+
+.data_body {
+  
+  font-size : 10px;
+  text-align: right;
+  color : #2E2E2E;
+  background-color : #FAFAFA;
+  overflow:auto;
+  /*
+  display: inline-block;
+    height: 200px;
+    overflow: auto;
+    */
+  
+}
+
+.data_body tr th {
+  text-align: center;
+}
+
+.data_body tr td {
+  text-align: right;
+}
+
+.data_body tr:nth-child(even) {
+  background-color: #F2F2F2
+}
+
+/*
+thead {
+  position: fixed;
+}
+*/
+/*
+.data_table th:nth-of-type(1), .data_table td:nth-of-type(1) { width: 80px; }
+.data_table th:nth-of-type(2), .data_table td:nth-of-type(2) { width: 30px; }
+*/
+
+.data_table .data-priorit-1 {
+	display: table-cell;
+	width:80px;
+}
+
+.data_table .data-priorit-2 {
+	display: table-cell;
+	width:30px;
+}
+
+.data_table .ui-table-priority-01 {
+	display: table-cell;
+	width:30px;
+}
+
+.data_table .ui-table-priority-02 {
+	display: table-cell;
+	width:30px;
+}
+
+.data_table .ui-table-priority-03 {
+	display: table-cell;
+	width:30px;
+}
+
+.data_table .ui-table-priority-04 {
+	display: table-cell;
+	width:30px;
+}
+
+.data_table .ui-table-priority-05 {
+	display: table-cell;
+	width:36px;
+}
+
+.data_table .ui-table-priority-06 {
+	display: table-cell;
+	width:30px;
+}
+
+.data_table .ui-table-priority-07 {
+	display: table-cell;
+	width:30px;
+}
+
+.data_table .ui-table-priority-08 {
+	display: table-cell;
+	width:30px;
+}
+
+.data_table .ui-table-priority-09 {
+	display: table-cell;
+	width:30px;
+}
+
+.data_table .ui-table-priority-10 {
+	display: table-cell;
+	width:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

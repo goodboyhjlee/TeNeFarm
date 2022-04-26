@@ -1,0 +1,465 @@
+
+<html>
+<head>
+	<title>TENEFarm 2.1</title>
+	
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--
+	<meta http-equiv="Content-Security-Policy" content="img-src  * 'self' http: https: data:; default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+-->
+	<meta http-equiv="Content-Security-Policy" content="img-src  * 'self' data: http: blob:; default-src *; media-src * blob:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    
+  <link rel="stylesheet" href="./css/jquery.mobile/jquery.mobile-1.4.5.min.css"/>  
+  <link rel="stylesheet" href="./css/jquery/jquery.alerts.css"/>
+	<link rel="stylesheet" href="./css/nativedroid2.color.light-green.css"/>
+	<link rel="stylesheet" href="./css/iot/gthings.css"/>
+	<link rel="stylesheet" href="./css/iot/farm.css"/>
+	<link rel="stylesheet" href="./css/iot/camera.css"/>
+	<link rel="stylesheet" href="./css/iot/custom-jqx.css"/>
+	<link rel="stylesheet" href="./css/swiper/swiper.css">	
+	<link rel="stylesheet" href="./css/iot/login.css"/>
+	<link rel="stylesheet" href="./css/iot/table.css"/>
+	<link rel="stylesheet" href="./css/iot/chart.css"/>
+	<link rel="stylesheet" href="./css/iot/weather.css"/>
+	<link rel="stylesheet" href="./css/iot/sensornode.css"/>
+	<link rel="stylesheet" href="./css/iot/sensornode_ws.css"/>
+	<link rel="stylesheet" href="./css/iot/sensoralert.css"/>
+	
+	
+	
+	<script type="text/javascript" src="./js/jquery/jquery-1.11.1.min.js"></script> 
+	<script type="text/javascript" src="./js/jquery/ui/jquery-ui.effect-min.js"></script> 
+
+	<script type="text/javascript" src="./js/chart/moment.min.js"></script>		
+	<script type="text/javascript" src="./js/chart/chartjs.js"></script>
+  
+   
+  <script type="text/javascript" src="./js/blight/blight.common.js"></script>
+	<script type="text/javascript" src="./js/iot/header_def.js"></script>
+	
+	<script type="text/javascript" src="./js/proj/winddir.js"></script>
+	<script type="text/javascript" src="./js/proj/init.js"></script>
+	<script type="text/javascript" src="./js/proj/utils.js"></script>
+	<script type="text/javascript" src="./js/jquery/jquery.alerts.js"></script>
+
+		
+  <script type="text/javascript" src="./js/iot/gsocket.js"></script>
+  <script type="text/javascript" src="./js/swiper/swiper.js"></script>
+  <script type="text/javascript" src="./js/blight/blight.common.js"></script>
+    
+	<script type="text/javascript" src="./js/jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.mobile/jqm-spinbox.min.js"></script>
+	
+
+	
+		
+	
+ 	<script type="text/javascript" src="./js/tene/weatherstation_local.js"></script>
+ 	<script type="text/javascript" src="./js/tene/tene.jschart.js"></script>
+ 	
+	<script type="text/javascript" src="./js/tene/act_onoff.js"></script>
+	<script type="text/javascript" src="./js/tene/act_knd.js"></script>
+	<script type="text/javascript" src="./js/tene/act_layer.js"></script>
+	<script type="text/javascript" src="./js/tene/act_layersub.js"></script>
+	<script type="text/javascript" src="./js/tene/actgrp_period.js"></script>
+	<script type="text/javascript" src="./js/tene/actgrp_corection.js"></script>
+	<script type="text/javascript" src="./js/tene/actgrp_etc.js"></script>
+	<script type="text/javascript" src="./js/tene/actgrp_layer_roll.js"></script>
+
+	
+	<script type="text/javascript" src="./js/tene/actgrp.js"></script>
+	<script type="text/javascript" src="./js/tene/sensor.js"></script>
+	<script type="text/javascript" src="./js/tene/sensor_common.js"></script>
+	<script type="text/javascript" src="./js/tene/sensornode.js"></script>
+	<script type="text/javascript" src="./js/tene/sensornode_common.js"></script>
+	<script type="text/javascript" src="./js/tene/house.js"></script>
+	<script type="text/javascript" src="./js/tene/control.js"></script>
+	
+	<script type="text/javascript" src="./js/tene/dfarm.js"></script>
+	<script type="text/javascript" src="./js/tene/user.js"></script>
+    <script type="text/javascript" src="./js/tene/tene.js"></script>
+    <script type="text/javascript" src="./js/tene/data.js"></script>
+    <script type="text/javascript" src="./js/tene/status.js"></script>
+    <script type="text/javascript" src="./js/tene/cctv_frame.js"/></script> 	
+
+    <script type="text/javascript" src="./js/tene/chart.util.js"/></script> 
+    <script type="text/javascript" src="./js/tene/multyseriespie.js"/></script> 	
+    <script type="text/javascript" src="./js/tene/chart_forcast.js"/></script> 	
+    <script type="text/javascript" src="./js/tene/chart_step.js"/></script> 	
+    
+
+    <script src="./js/kakao/kakao.js"></script>
+   
+
+
+    <style>
+      .float_layer{position:absolute; top:10px; right:40px;z-index:999;
+        background-color:#2E2E2E; color:#F2F2F2; padding:8px;border-radius: 15px;
+        font-size:14px; font-weight:normal;opacity: 0.5; vertical-align:middle; text-align:center;
+        
+      }
+
+  </style>
+
+
+</head>
+
+<body>
+	<div id="divfull" >
+		<div class="cctvfullviewer" >
+			<webview id="webviewfull" style="width:100%; height:100%;"></webview>
+		</div>
+		<div class="cctvbuttons" id="cctvbuttons">
+			<div class="button isptz">
+				<img id="panleft" name="camperation" src="./css/iot/images/left.png">
+			</div>
+			<div class="button isptz">
+				<img id="panright" name="camperation" src="./css/iot/images/right.png">
+			</div>
+			<div class="button isptz">
+				<img id="panup" name="camperation" src="./css/iot/images/up.png">
+			</div>
+			<div class="button isptz">
+				<img id="pandown" name="camperation" src="./css/iot/images/down.png">
+			</div>
+			<div class="button isptz">
+				<img id="zoomin" name="camperation" src="./css/iot/images/plus.png">
+			</div>
+			<div class="button isptz">
+				<img id="zoomout" name="camperation" src="./css/iot/images/minus.png">
+			</div>
+
+			<div class="preset isptz" >
+				<div>
+				<select  id="preset"  data-native-menu="false" >					
+					<option value="0">선택</option>
+					<option value="1">작물</option>
+					<option value="2">전면</option>
+					<option value="3">후면</option>						
+					<option value="4">좌측</option>
+					<option value="5">우측</option>
+				</select>
+				</div>
+				<!--
+				<img id="preset" src="./css/iot/images/zoom-out.png">
+				-->
+			</div>
+
+
+			<div class="button exit">
+				<img id="cctvfullexit" src="./css/iot/images/exit.png">
+			
+			</div>
+		</div>
+		<!--
+  		<webview id="webviewfull" page_mainstyle="width:100%; height:100%;" src=""></webview>
+  	-->
+  	</div>
+
+
+
+	<div data-role="page" id="page_main" >
+		<div id="header" class="default" data-role="header" data-position="fixed" data-theme="a" >
+			<div class="toph">
+				<div class="lefth">	
+				<!--	
+					<img src="https://forum.framework7.io/uploads/default/original/2X/b/b6e166f336a811a608164eebc9f48ac70d2dd149.png" >
+				
+					<div style="display:none;">
+							<audio id="myAudioElement" />
+					</div>
+					-->
+					<div id="main_ci">
+						<img src="./css/iot/images/glogo.png" style="height: 30px;">	
+					</div>				
+					
+					<div id="miner_name">TeNe Farm</div>
+					<div id="clock"></div>
+					
+				</div>
+				<div class="righth">
+					<!--
+					<img  id="recognize" src="./css/iot/images/recongnize.png" style="width:32px; height: 32px;">	
+					<img  id="briefing" src="./css/iot/images/briefing.png" style="width:32px; height: 32px;">	
+				-->
+					<img  id="logout" src="./css/iot/images/user.png" style="width:32px; height: 32px;">					
+					<img  id="intro" src="./css/iot/images/exit.png" style="width:32px; height: 32px;" data-serverip="">
+				</div>
+			</div>
+			<div class="bottomh">
+				<div class="swiper-pagination"></div>
+			</div>
+		</div><!-- /header -->
+		
+		<!--
+		<div data-role="footer" data-position="fixed"></div>
+	-->
+		
+		<div id="main" role="main" class="ui-content">
+			<div class="swiper-container">
+		        <div class="swiper-wrapper">
+		          	<div id="swiper_rtime" class="swiper-slide">
+					    		<div id="rtime_container" class="dynamin_container">
+					    			<div style="display:block;" >
+						    			<div id="weather_station" style="display:block;" >
+						    			</div>
+					    			</div>					    	
+					    		</div>
+	            	</div>
+		            
+		            
+		          	<div id="swiper_config" class="swiper-slide">			          	
+	            		<div class="float_layer"></div>           		
+	           	 		<div id="control_container" class="dynamin_container">	
+	           	 		</div>
+		          	</div>
+		          
+		          	<div id="swiper_camera" class="swiper-slide">			          		
+		          		<div id="cams_container" class="dynamin_container" style="text-align:center;"></div>
+			      		</div>
+			        
+			        <!-- 누적 -->
+			        <div id="swiper_measure" class="swiper-slide">
+			        	<div id="data_container" class="dynamin_container" style="text-align:left;">
+			        		<div  class="where" id="where" >
+			        			<div  class="fieldcon" style="display:none;">
+		          	   			<div class="title">
+		          	   				<div>농 장  </div>
+		          	   			</div>
+		          	   			<div class="select">
+		          					  <select name="farmlist" id="farmlist_table" data-native-menu="false" ></select>
+		          				</div>
+		          			</div>
+		          			<div  class="fieldcon" >
+		          	   			<div class="title">
+		          	   				<div>시 설  </div>
+		          	   			</div>
+		          	   			<div class="select">
+		          					  <select name="houselist" id="houselist_table" data-native-menu="false" >
+		          					  	
+		          					  </select>
+		          				</div>
+		          			</div>
+		          			<div  class="fieldcon" >
+		          	   			<div class="title">
+		          	   				<div>주 기  </div>
+		          	   			</div>
+		          	   			<div class="select">
+		          	   				<select name="mea_term" id="mea_term_table" data-native-menu="false" >
+		          						<option value="day">1 일</option>
+		          						<option value="hour" selected>1 시간</option>	
+		          					</select>
+		          					  
+		          				</div>
+		          			</div>
+		          			<div  class="fieldcon" >
+		          	   			<div class="title">
+		          	   				<div>기 간  </div>
+		          	   			</div>
+		          	   			<div class="date">
+		          	   				<div class="seldate">
+		          					  <input  type="date" name="startdat" id="startdat_table"  data-role="date"  >
+		          					</div>
+		          					<div class="mark">~</div>
+		          					<div class="seldate">			          						
+		          					  <input type="date" name="enddat"  id="enddat_table"   data-role="date">		          					
+		          					 </div>	
+		          				</div>
+		          			</div>
+		          			
+		          			<div  class="button" >
+		          	   			<button id="btn_getdata" name="btn_getdata" data-kind="table">검색</button>
+		          			</div>
+			        	</div> <!-- where -->
+
+			        	<div  class="historyitemselecter" id="con_historyitemselecter">
+			        		<div  data-role="fieldcontain" >
+										<fieldset id="historyitemselecter" data-role="controlgroup" data-type="horizontal"></fieldset>
+									</div>
+			        	</div> <!-- con_historyitemselecter -->
+
+			        	<div  class="historyitemselecter" id="con_historyitemminmax">
+			        		<div  data-role="fieldcontain" >
+										<fieldset id="historyitemminmax" data-role="controlgroup" data-type="horizontal">
+											<div class="ui-controlgroup-controls" style="width:50px; margin-right:2px;">
+												<input type="checkbox" id="historyavg" name="check_minmax" checked class="custom" data-knd="avg"/>
+												<label for="historyavg" style="color:#333;">평균</label>
+											</div>
+											<div class="ui-controlgroup-controls" style="width:50px; margin-right:2px;">
+												<input type="checkbox" id="historymin" name="check_minmax"  class="custom" data-knd="min"/>
+												<label for="historymin" style="color:#888844;">최소</label>
+											</div>
+											<div class="ui-controlgroup-controls" style="width:50px; margin-right:2px;">
+												<input type="checkbox" id="historymax" name="check_minmax"  class="custom" data-knd="max"/>
+												<label for="historymax" style="color:#DF013A;">최대</label>
+											</div>
+										</fieldset>
+									</div>
+			        	</div> <!-- con_historyitemminmax -->
+
+			        	<div id="historycontainer" class="historycontainer">
+			        	</div>
+			        </div>  <!-- data_container -->
+			       </div>	<!-- swiper_measure -->
+			       <!-- 누적 -->
+
+			       <!-- chart step begin -->
+			        <div id="swiper_step" class="swiper-slide">
+			        	<div  class="dynamin_container" style="text-align:left;">
+			        		<div  class="where" id="where" >
+			        			
+		          			<div  class="fieldcon" >
+		          	   			<div class="title">
+		          	   				<div>시 설  </div>
+		          	   			</div>
+		          	   			<div class="select">
+		          					  <select name="houselist" id="houselist_step" data-native-menu="false" >
+		          					  	
+		          					  </select>
+		          				</div>
+		          			</div>
+		          			
+		          			<div  class="fieldcon" >
+		          	   			<div class="title">
+		          	   				<div>시작일  </div>
+		          	   			</div>
+		          	   			<div class="date">
+		          	   				<div class="seldate">
+		          					  <input  type="date" name="startdat" id="startdat_step"  data-role="date"  >
+		          					</div>
+		          					
+		          				</div>
+		          			</div>
+		          			
+		          			<div  class="button" >
+		          	   			<button id="btn_step" name="btn_step" data-kind="table">검색</button>
+		          			</div>
+			        	</div> <!-- where -->
+			        	<div id="stepcontainer" class="historycontainer">
+			        	</div>
+			        </div> 
+			      </div>
+			        <!-- chart step end -->
+
+			       <!-- Test1 begin 
+			        <div id="swiper_test" class="swiper-slide">
+			        	<div class="dynamin_container" style="text-align:left;">
+			        		<div >
+			        			<div  class="button" >
+		          	   			<button id="btn_msp"  data-kind="table">검색</button>
+		          			</div>
+			        			<canvas id="chartmsp" style="width:100%; height:700px;">
+			        		</div>
+			        	</div>
+			        </div> 
+			     Test1 end -->
+
+			        <!-- Test2 begin
+			        <div id="swiper_forcast" class="swiper-slide">
+			        	<div id="forcast_container" class="dynamin_container" style="text-align:left;">
+			        		<div id="forcstechartcontainer" >
+			        			<div  class="button" >
+		          	   			<button id="btn_forcast"  data-kind="table">검색</button>
+		          			</div>
+			        			<canvas id="chartforcast" style="width:100%; height:700px;">
+			        		</div>
+			        	</div>
+			        </div> 
+			        Test2 end -->
+
+
+
+			        
+
+		      </div>
+		    </div>	
+		</div>
+		
+
+		<div  data-role="popup" id="senser_alert"    data-overlay-theme="b"  data-corners="false" style="width:100%;" >
+		   	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		  	<div class="pop_sensor">
+		  		
+			    <div id="pop_sensor_title" class="title">알림설정</div>
+		      	<div id="pop_sensor_container" ></div>
+			</div>
+		</div>
+
+
+<!--
+		<div  data-role="popup" id="set_limit"    data-overlay-theme="b"  data-corners="false" style="width:100%;" >
+		   	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		  	<div class="pop_limit">
+		  		
+			    <div id="set_limit_title" class="title">알림설정</div>
+		      	<div id="set_limit_container" ></div>
+			</div>
+		</div>
+
+		<div  data-role="popup" id="senser_chart"    data-overlay-theme="b"  data-corners="false" style="width:100%;" >
+		   	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		  	<div class="pop_chartinfo">
+		  		
+			    <div id="pop_chartinfo_title" class="title">알림설정</div>
+		      	<div id="pop_chartinfo_container" ></div>
+			</div>
+		</div>
+	
+		-->
+	</div>
+	
+	
+	
+	<div data-role="page" id="page_login">
+	    <div role="main" class="ui-content">	    	
+			<div id="login_container">
+			  <div id="header" class="login" data-role="header" data-position="fixed" >
+    			<div class="top">
+    				<div class="left1">
+    					<img src="./css/iot/images/glogo.png" style="width:80px; height: 40px;">
+    					<div id="miner_name">TeNeFarm</div>
+    				</div>
+    				
+    			</div>
+    			
+    			</div><!-- /header -->
+    		
+    		<div  role="main" class="ui-content " >
+    					<div>
+    						
+    						<div id="login_inner_container" class="loginwrapper">
+    							<div class="loginwrap zindex100 animate2 bounceInDown">
+    							
+    						        <div class="loginwrapperinner">
+    						            <form action="" id="frm_login" name="frm_login" method="post">
+    						                <p class="animate4 bounceIn"><input type="text" id="usr_id" name="usr_id"  placeholder="아이디" value=""/></p>
+    						                <p class="animate5 flip"><input type="password" id="usr_pw" name="usr_pw" placeholder="비밀번호" value="" /></p>
+    						                <p class="animate6 wobble" style="text-align:center;"><button id="login_submit" class="btn btn-default btn-block">Login</button></p>
+    						            </form>
+    						        </div>
+    						    </div>
+    						</div>
+    						 
+    						
+    			
+    						
+    					</div>
+    					
+    				
+    		
+    		</div>
+	    </div><!-- /content -->
+	</div><!-- /page_window_side  style="position: absolute;; z-index: 9999;"-->
+	</div>
+
+
+	
+	
+	
+	
+    
+    
+
+</body>
+</html>

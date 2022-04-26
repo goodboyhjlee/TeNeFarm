@@ -1,0 +1,308 @@
+#divfull {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    /*
+    top: 10px;
+    */
+}
+
+#divfull .cctvfullviewer {
+
+}
+
+#divfull .cctvbuttons {
+    width: 100% !important;
+    /*
+    height: 100% !important;
+    */
+    position: absolute !important;
+    z-index: 99999;
+    left: 0px;
+    bottom: 6px;
+            background-image: linear-gradient(#f3f3f354, #666);
+            
+}
+
+#divfull .cctvbuttons .preset {
+   display: inline-block;
+    z-index: 999999;
+    margin: 1px;
+    padding: 1px;
+}
+
+#divfull .cctvbuttons .preset a {
+    color: #f3f3f3;
+    border: none;
+        font-size: 14px;
+}
+
+#divfull .cctvbuttons .preset a span {
+    padding-right: 10px;
+}
+
+
+#preset-listbox {
+  background-color: #11111185;
+  color: #fff;
+
+}
+
+#preset-listbox .ui-listview>.ui-li-static, #preset-listbox .ui-listview>.ui-li-divider,  #preset-listbox .ui-listview>li>a.ui-btn {
+    color: #fff;
+    font-size: 12px;
+
+}
+
+#divfull .cctvbuttons .button {
+   display: inline-block;
+    
+    margin: 1px;
+    padding: 1px;
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+#divfull .cctvbuttons .exit {
+   float:  right;
+       margin-right: 20px;
+       margin-top: 8px;
+}
+
+#divfull .cctvbuttons .button img {
+   width: 32px;
+    height: 32px;
+
+}
+
+   
+.cctvfull_off {
+    display: none;
+}
+
+.cctvfull_on {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 9999;
+        top: 0;
+
+}
+
+.cam_out_full {
+    width: 100% !important;
+    /*
+    height: 100% !important;
+    */
+    position: absolute !important;
+    z-index: 999;
+    left: 0px;
+    top: 0px;
+}
+
+.cam_out_full .imgfull {
+    width:100% !important;
+    
+    height: 100% !important;
+    
+}
+
+.cam_out {
+	position: relative;
+	display:inline-block;
+	width:120px;
+	height:90px;
+	/*
+	border-radius: 5px; 
+	border: 1px solid #6E6E6E; 
+    float:left;
+	*/
+	margin:2px;
+	text-align : center;
+        border: 2px solid #424242;
+	
+}
+
+
+
+.cam_out .cam_out_header {
+	position: absolute;
+	
+	padding-top:1px;
+	padding-bottom:4px;
+	padding-left:8px;
+	padding-right:8px;
+	/*
+	color:#fff; 
+	*/
+	font-size:20px; 
+	text-align: left;
+	
+	/*
+    display:inline-block;
+    border-radius: 10px;
+    border: 1px solid #6E6E6E;
+	background-color: #6E6E6E;
+	width:100px;
+    margin-left:4px;
+    margin-right:4px;
+    background-color: #6E6E6E;
+    margin-top:4px;
+    margin-bottom:4px;
+	*/
+	background-image: linear-gradient(#333333f0, #f3f3f300);
+	width:160px;
+	
+	
+	color:#fff;
+	
+	left: 0px;
+    top: 0px;
+}
+
+.cam_out .cam_play {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+    order: 1px solid red;
+    background-image: linear-gradient(#f3f3f300,#333333f0);
+}
+
+.cam_out .cam_play img {
+    width: 48px;
+    height: 48px;
+}
+
+.cam_out .cam_play .div_play {
+    display: inline-block;
+        width: 48px;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    order: 1px solid red;
+
+}
+
+.cam_out .cam_play .div_full {
+    display: inline-block;
+        width: 48px;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    order: 1px solid red;
+}
+
+
+.cam_out .cam_out_body {
+    background-image : url("/css/iot/images/camera-icon.png");
+    background-repeat: no-repeat;
+  
+  background-position: center;
+  /*
+    background-attachment: fixed;
+	padding:4px;
+	*/
+}
+
+.cam_out .cam_out_body .cam_control_block {
+    
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity: 0;
+}
+
+.cam_out .cam_out_body .cam_control {
+    
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: 9999;
+    
+}
+
+.cam_out .cam_out_body .cam_snapshot {
+  /*
+	width:100%;
+	*/
+	width:120px;
+	height: 70px;
+}
+
+.cctvnotconnect {
+  
+  width:115px;
+  
+  
+  /*
+  background:url(/css/iot/images/cctv.png);
+  background-repeat: no-repeat;
+    background-size: 64px 64px;
+    background-position: center; 
+    */
+}
+
+/* Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}

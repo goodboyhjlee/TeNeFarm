@@ -1,0 +1,166 @@
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
+  font-size: 12px;
+}
+
+.ui-popup-container {
+    
+    z-index: 99999;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+  text-shadow:none;
+  }
+
+/*
+input[type=date]::-webkit-datetime-edit-text { -webkit-appearance: none; display: none; } 
+input[type=date]::-webkit-datetime-edit-month-field{ -webkit-appearance: none; display: none; } 
+input[type=date]::-webkit-datetime-edit-day-field { -webkit-appearance: none; display: none; } 
+input[type=date]::-webkit-datetime-edit-year-field { -webkit-appearance: none; display: none; }
+input[type="date"]::-webkit-clear-button, input[type="date"]::-webkit-inner-spin-button { 
+ display: none; 
+} 
+input[type="date"]::-webkit-calendar-picker-indicator { 
+ color: red; 
+} 
+input[type="date"] { 
+ background: grey; 
+ color: white; 
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+ input[type="date"]::-webkit-inner-spin-button {
+     display: none;
+     appearance: none;
+ }
+*/
+
+
+
+
+
+
+
+.ui-input-text input, .ui-input-search input {
+      width: 100px;
+    min-height: 1.2em;
+    font-size: 12px;
+}
+
+.ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn-icon-notext, .ui-controlgroup-horizontal .ui-controlgroup-controls button.ui-btn-icon-notext {
+     width: 0.5em; 
+         padding-top: 16px;
+}
+
+.ui-popup.ui-body-inherit {
+  border-radius: 10px;
+}
+
+.ui-content {
+  padding:0px;
+  margin-top: 2px;
+  overflow: hidden;
+}
+
+.ui-page-theme-a .ui-btn {
+  text-shadow: none !important;
+  /*
+	font-family: Dotum, Baekmuk Dotum, Undotum, Apple Gothic, Latin font, sans-serif !important;
+	font-weight:normal !important;
+  
+	border-style: none !important;
+  
+  *//*{a-bhover-shadow-x};1px/*{a-bhover-shadow-y}*/0/*{a-bhover-shadow-radius}*/#f3f3f3/*{a-bhover-shadow-color}*/ !important;
+}
+
+.ui-checkbox, .ui-radio {
+  margin: 0;
+}
+
+.ui-icon-mysave:after {
+  background-image: url("./images/save.png");
+  background-size: 12px;
+}
+/* Fallback */
+.ui-nosvg .ui-icon-mysave:after {
+  background-image: url("./images/save.png");
+  background-size: 12px;
+}
+
+.ui-icon-mychart:after {
+  background-image: url("./images/chart.png");
+  background-size: 12px;
+}
+/* Fallback */
+.ui-nosvg .ui-icon-mychart:after {
+  background-image: url("./images/chart.png");
+  background-size: 12px;
+}
+
+.ui-listview>.ui-li-static {
+  padding-top:0px !important;
+  padding-left:2px !important;
+  padding-right:2px !important;
+}
+
+.ui-select {
+  margin-top:2px;
+  margin-bottom:2px;
+  font-size: 11px;
+}
+
+.ui-input-text, .ui-input-search {
+  margin:0px;
+}
+
+.ui-controlgroup, fieldset.ui-controlgroup {
+  margin:0px;
+  /*
+  padding-top:2px;
+  */
+}
+
+.ui-collapsible-content {
+  padding : 0px !important;
+  
+   padding-top:0px;
+   /*
+    padding-bottom:4px;
+    */
+     padding-left:0px;
+      padding-right:0px;
+}
+
+.gthings .ui-collapsible-content>.ui-listview:not(.ui-listview-inset) {
+  
+  /*
+    padding-left: 16px;
+    width: 90%;
+    */
+    display: inline;
+}
+
+.gthings .ui-collapsible-themed-content:not(.ui-collapsible-collapsed)>.ui-collapsible-heading {
+  height:36px;
+}
+
+
+.ui-collapsible-inset, .ui-collapsible-set {
+  margin-top: 0px;
+    margin-right: 1px;
+    margin-bottom: 0px;
+    margin-left: 1px;
+    max-width: 600px;
+    vertical-align: top;
+    border: 1px solid #333;
+}
+
+
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    padding-bottom:4px;
+    padding-bottom: 10px;
+}
+
+.out .ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn-icon-notext, .ui-controlgroup-horizontal .ui-controlgroup-controls button.ui-btn-icon-notext {
+  width:1px;
+}

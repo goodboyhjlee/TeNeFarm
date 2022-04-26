@@ -1,0 +1,49 @@
+.historyitemselecter {
+	    border-bottom: 1px solid #a4a4a4;
+      /*
+    min-height: 30px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    */
+        
+    
+    padding: 4px;
+}
+
+
+.historyitemselecter .ui-controlgroup-horizontal .ui-controlgroup-controls {
+	    width: auto !important;
+}
+
+ .historyitemselecter .ui-field-contain, .ui-mobile fieldset.ui-field-contain {
+ 	margin:0px;
+ }
+
+.historycontainer {
+  /*
+	    border: 1px solid darkred;
+    min-height: 60px;
+    border-radius: 5px;
+    */
+}
+
+.historycontainer .chart {
+  /*
+      border: 1px solid darkred;
+    
+    border-radius: 5px;
+    
+    height: 500px;
+    */
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 300px;
+
+}
+
+.ui-btn {
+  margin:0px !important;
+}
+

@@ -1,0 +1,172 @@
+#senser_alert .pop_sensor {
+	text-align: center;
+	/*
+	width:360px;
+	*/
+}
+
+#senser_alert .pop_sensor .title {
+	display: inline-block;
+	font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 6px;
+    
+	padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid green;
+}
+
+#senser_alert .pop_sensor .container {
+	
+	border: 1px solid #A4A4A4;
+	border-radius: 10px; 
+	
+    margin: 4px;
+}
+
+#senser_alert .pop_sensor .container  .header {
+	display: block;
+	height: 40px;
+	padding-left: 4px;
+}
+
+#senser_alert .pop_sensor .container  .values {
+	display: block;
+	vertical-align: middle;
+	/*
+	padding-left: 10px;
+    padding-right: 10px;
+    */
+    height: 44px;
+}
+
+#senser_alert .pop_sensor .container  .header .title {
+	float:left;
+	border: 1px solid #A4A4A4;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+#senser_alert .pop_sensor .container .values .itembox {
+	text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    font-size: 14px;
+    vertical-align: middle;
+    height: 36px;
+}
+
+#senser_alert .pop_sensor .container .values .range {
+	display: inline-block;
+	
+	/*
+	text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    */
+    
+    font-size: 14px;
+    vertical-align: middle;
+    
+    width: 240px;
+}
+
+#senser_alert .pop_sensor .container .range .value {
+	display: block;
+	/*
+    width: 100%;
+    border: none;
+    */
+}
+
+#senser_alert .pop_sensor .container .range .value input {
+	width : 30px;
+	font-family: digitalFont;
+	font-size: 14px;
+}
+
+#senser_alert .pop_sensor .container .range .value .ui-slider-track .ui-btn.ui-slider-handle {
+    top: -50%;
+}
+
+#senser_alert .pop_sensor .container .range .value .ui-shadow-inset {
+    border: none !important;
+}
+
+#senser_alert .pop_sensor .container  .values .isuse {
+	display: inline-block;
+	vertical-align: middle;
+	/*
+	float:right;
+	width: 70px;
+	*/
+	
+}
+
+#senser_alert .pop_sensor .container  .values .save {
+	display: inline-block;
+	vertical-align: middle;
+	/*float:right;*/
+	
+}
+
+
+
+
+
+
+
+
+/*
+========================
+*/
+#senser_chart .pop_chartinfo {
+	text-align: center;
+	width:360px;
+}
+
+#senser_chart .pop_chartinfo .title {
+	display: inline-block;
+	font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 6px;
+    
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+#senser_chart .pop_chartinfo .container {
+	
+	border: 1px solid #A4A4A4;
+	border-radius: 10px; 
+	
+    margin: 4px;
+}
+
+#senser_chart .pop_chartinfo .container  .header {
+	height: 44px;
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+#senser_chart .pop_chartinfo .container  .header .title {
+	float:left;
+	border: 1px solid #A4A4A4;
+    border-radius: 20px;
+}
+
+#senser_chart .pop_chartinfo .container  .header .isuse {
+	float:right;
+	width: 100px;
+}
+
+#senser_chart .pop_chartinfo .container  .header .save {
+	float:right;
+	
+}

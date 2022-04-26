@@ -1,0 +1,64 @@
+.weather {
+  
+  /*
+  border: 2px solid #424242;
+  border-radius: 5px;
+  */
+  
+  display:block;
+  
+ 
+  padding:4px;
+ //font-family:"myFirstFont";
+  
+}
+
+.weather .header{
+  display:inline-block;
+  background-image:  url('/css/iot/images/forecastlogo.jpg');
+  background-size: 60px;
+  background-repeat : no-repeat;
+  float:left;
+  width:60px;
+  height:60px;
+  /*
+  box-shadow: 1px 0 3px 5px #848484;
+  */
+  margin-bottom:14px;
+}
+.weather .items {
+  display:block;
+  height:50px;
+}
+
+.weather .item {
+  display:block;
+  float:left;
+  
+  
+  margin-right:2px;
+  margin-bottom:4px;
+  width:100px;
+}
+
+
+.weather .item .title{
+  display:block;
+  font-weight:normal !important;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  float:left;
+  margin-right:4px;
+  padding:4px;
+  font-size:12px;
+}
+
+.weather .item .value{
+  
+  font-weight:normal !important;
+  display:block;
+  float:left;
+  margin-right:4px;
+  padding:4px;
+  font-size:12px;
+}
