@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: lib/java-json.jar  lib/pi4j-core.jar lib/pi4j-gpio-extension.jar lib/jssc-2.8.0.jar lib/commons-net-3.6.jar
+Main-Class: com.gthings.exe.Run
+Permissions: all-permissions
